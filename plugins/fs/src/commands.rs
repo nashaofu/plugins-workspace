@@ -787,6 +787,7 @@ fn write_file_inner<R: Runtime>(
     data: &[u8],
     options: Option<WriteFileOptions>,
 ) -> CommandResult<()> {
+    println!("sdsdasdas {:?}", path);
     let (mut file, path) = resolve_file(
         &webview,
         global_scope,
