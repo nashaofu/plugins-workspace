@@ -27,7 +27,7 @@ function App() {
       <button
         onClick={async () => {
           const path = await save({
-            defaultPath: 'shell360.txt'
+            defaultPath: 'shell360.json5'
           })
 
           if (!path) {
@@ -126,7 +126,7 @@ export default App
       <button
         onClick={async () => {
           const path = await open({
-            defaultPath: 'shell360.txt'
+            defaultPath: 'shell360.json5'
           })
 
           if (!path) {
